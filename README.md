@@ -53,6 +53,7 @@ Sigue estos pasos para instalar y configurar el proyecto en tu entorno local:
 
 4.- Agregar un botón en el formulario del modal para enviar los datos a API (SendUser)   con el json descrito abajo , además modificando el campo Code e incluyendo el campo User con su usuario de GitHub.
 Datos de ejemplo:
+```
 {
 	“Id” : 15,
 	“Code”: “V081”
@@ -60,4 +61,5 @@ Datos de ejemplo:
 	“Date”: “2024-07-05T15:01:43.170Z”
 	“Github”: “https://github.com/markjamestest”
 }
+```
 Nota: Este devolverá un estatus 200, si se realizó correctamente y estos cambios no se verán reflejados en API (ListTableUsers).
