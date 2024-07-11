@@ -116,14 +116,12 @@
             try {
                 const response = await axios.get('api/getuserscode');
                 this.userCodes = response.data;
-                console.log('Códigos de usuarios obtenidos:', this.userCodes);
             } catch (error) {
                 console.error('Error al obtener los códigos de usuarios:', error);
             }
         },
         openEditModal(user) {
             this.editedUser = { ...user, date: this.formatDate(user.date) };
-            console.log(this.editedUser);
             this.showModal = true;
         },
         updateUser() {
@@ -147,7 +145,7 @@
                 Swal.fire({
                     icon: 'success',
                     title: '¡Operación exitosa!',
-                    text: 'Los cambios se guardaron correctamente.',
+                    text: 'Los datos se enviaron a la API externa correctamente.',
                     confirmButtonText: 'Aceptar'
                 });
             } catch (error) {
